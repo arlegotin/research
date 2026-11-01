@@ -6,6 +6,8 @@ I'm following those questions through 54 projects on learning, efficient computa
 
 I build around exact references, recoverable experiments, strong baselines and complete resource costs. When a simpler method wins, I keep that in the record. That's often where I learn the most.
 
+I'm looking for a new angle in each project. If one catches your eye, you're welcome to build it yourself, challenge the premise, or take it somewhere I haven't. I'd love to see what you find.
+
 | Project | The idea | What worked | What got in the way | Status |
 | --- | --- | --- | --- | --- |
 | [Counterexample-guided operator coalescing](projects/counterexample-guided-operator-coalescing/poc.md) | Shared feed-forward weights across language-model layers, with difficult examples probing which merges are safe. | Recovery repaired about 62% of initial teacher disagreement in one development case; complete offline artifacts. | No useful edge over strong dense quantization; the counterexample-selection benefit remains unproved. | [Published](https://github.com/arlegotin/counterexample-guided-operator-coalescing) · ongoing |
