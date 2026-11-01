@@ -1,0 +1,19 @@
+# This repository publishes an index and research briefs.
+/*
+!/.gitignore
+!/README.md
+!/projects/
+
+# Local portfolio analysis stays local.
+/analysis/
+
+# Traverse project directories, but publish only poc.md and poc_<number>.md.
+/projects/**
+!/projects/**/
+!/projects/**/poc.md
+!/projects/**/poc_[0-9]*.md
+
+# Git globs cannot repeat a digit class: reject any nonnumeric suffix explicitly.
+/projects/**/poc_*[!0-9]*.md
+
+.DS_Store
