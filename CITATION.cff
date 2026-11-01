@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the relevant project brief and the repository commit you used."
+title: "Research: ideas, proof-of-concept plans and experiments"
+authors:
+  - family-names: "Legotin"
+    given-names: "Artem"
+url: "https://github.com/arlegotin/research"
+license: CC-BY-SA-4.0
+preferred-citation:
+  type: generic
+  title: "Research: ideas, proof-of-concept plans and experiments"
+  authors:
+    - family-names: "Legotin"
+      given-names: "Artem"
+  year: 2026
+  url: "https://github.com/arlegotin/research"

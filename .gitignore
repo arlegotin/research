@@ -2,7 +2,15 @@
 /*
 !/.gitignore
 !/README.md
+!/LICENSE
+!/LICENSING.md
+!/CITATION.cff
 !/projects/
+!/assets/
+
+# Only the credited README artwork is published from assets.
+/assets/**
+!/assets/alchemist.webp
 
 # Local portfolio analysis stays local.
 /analysis/

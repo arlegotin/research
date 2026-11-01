@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="assets/alchemist.webp" alt="An elderly alchemist seated among laboratory apparatus, engraved by Christoph Weigel in 1698." width="300">
+</p>
+
 # Research
 
 I use AI to get from “what if?” to a working test while I'm still excited about the question. Can I grow a network without changing its predictions? Can I sample exactly while reading only a fraction of a model's output weights? What should a memory keep before it knows the question?
 
-I'm following those questions through these projects on learning, efficient computation and their mathematical limits. I've published some as working implementations and completed studies; others are in progress or waiting to be built. I like being able to chase more of them far enough to find out.
+I'm following those questions through projects on learning, efficient computation and the limits of what evidence can establish. I've published some as working implementations and completed studies; others are in progress or waiting to be built. I like being able to chase more of them far enough to find out.
 
 I build around exact references, recoverable experiments, strong baselines and complete resource costs. When a simpler method wins, I keep that in the record. That's often where I learn the most.
 
@@ -22,10 +26,14 @@ I'm looking for a new angle in each project. If one catches your eye, you're wel
 | [Fuss–Catalan certificates](projects/fuss-catalan-cert/poc.md) | The smallest shift that orders branching distributions at every threshold, including the difficult case of noninteger shapes. |  |  | Planned |
 | [Gated invertibility](projects/gated-invertibility/poc.md) | When self-gating destroys information, and the smallest skip connections that can make the layer invertible again. |  |  | Planned |
 | [Quota-closure circuits](projects/quota-closure-circuits/poc.md) | Computing with partitions, then tracing how much original context is needed to explain a single output relationship. |  |  | Planned |
+| [Diagonal reachability](projects/diagonal-reachability/poc.md) | Can diagonal reachability find new configuration bugs after pairwise coverage, or has the ordinary test catalogue already exhausted the useful distinction? |  |  | Planned |
+| [Bot ladder feasibility](projects/bot-ladder-feasibility/poc.md) | A playable tic-tac-toe difficulty ladder with exact expected-score guarantees, testing when another harder opponent becomes mathematically impossible. |  |  | Planned |
 | [Selective exact computation](projects/selective-exact-computation/poc.md) | Exact sampling without reading every output weight: cheap sketches screen candidates, full precision resolves only ambiguous decisions. |  |  | Planned |
 | [Adaptive interaction neuron](projects/adaptive-interaction-neuron/poc.md) | Bounded, low-rank interactions inside a neuron, with selective computation aimed at retaining useful nonlinear structure for less work. |  |  | Planned |
 | [Counterfactual Memory Learning](projects/CML/poc.md) | Training memory admission on the exact future difference between accepting a write and rejecting it. |  |  | Planned |
 | [Crossform reasoning](projects/crossform-reasoning/poc.md) | A formula and a table can express the same answer but invite different mistakes. Can semantic cross-checks turn that into better reasoning? |  |  | Planned |
+| [Identifiability bench](projects/identifiability-bench/poc.md) | Language models must recover a numerical dictionary or exhibit two valid alternatives, so a claim of certainty comes with something checkable. |  |  | Planned |
+| [Benchmark sensitivity](projects/benchmark-sensitivity/poc.md) | How much selective reporting can turn an AI preference result into apparent evidence? Sharp sensitivity bounds separate report-specific fragility from simultaneous neutrality. |  |  | Planned |
 | [Refutable concept engine](projects/refutable-concept-engine/poc.md) | Learning reusable experiments that distinguish competing explanations, alongside the executable explanations themselves. |  |  | Planned |
 | [Capability-change tokens · WCCT](projects/WCCT/poc.md) | Describing an attachment by the capability it changes, then designing backward from a desired behavioral effect. |  |  | Planned |
 | [Predictive Cognitive Homeostasis · PCH](projects/PCH/poc.md) | A coding agent that forecasts how interventions could restore its ability to make progress, and chooses when to intervene. |  |  | In progress |
@@ -36,6 +44,7 @@ I'm looking for a new angle in each project. If one catches your eye, you're wel
 | [Action-grounded reference frames · FFPA](projects/FFPA/poc.md) | A persistent belief about which body and action channel an agent controls, tested when that relationship suddenly changes. |  |  | Planned |
 | [Local learning contracts · PCN](projects/PCN/poc.md) | Local training objectives held accountable to the final language task through occasional forward audits. |  |  | Planned |
 | [Coverage-guided sparse attention](projects/coverage-guided-sparse-attention/poc.md) | Attention that remembers what earlier layers read, then spends its next reads on evidence still missing. |  |  | Planned |
+| [Retained completion utility](projects/rcu-bench/poc.md) | The same evidence, rearranged: does grouping complementary passages help a support assistant deliver answers that are complete, correct and sourced? |  |  | Planned |
 | [Hierarchical linguistic state routing](projects/hierarchical-linguistic-state-routing/poc.md) | Predicted linguistic states route language computation, with strict causal alignment to what the model has actually seen. |  |  | Planned |
 | [Interface geometry](projects/interface-geometry/poc.md) | Adapting a shared representation without breaking its downstream consumers, using their local sensitivity to price each change. |  |  | Planned |
 | [Certified XOR-delta inference](projects/certified-xor-delta-inference/poc.md) | Net bit changes and threshold margins certify when a binary layer can reuse its exact output without recomputing. |  |  | Planned |
@@ -58,9 +67,20 @@ I'm looking for a new angle in each project. If one catches your eye, you're wel
 | [Certified Wasserstein fusion](projects/certified-wasserstein-fusion/poc.md) | Fusing candidate distributions and certifying geometric conditions before paying for a costly fallback. |  |  | Planned |
 | [Leakage-resilient additive masks](projects/leakage-resilient-additive-mask-generation/poc.md) | Secret masks that stay uniform after two source-bit disclosures, built with less additive entropy. |  |  | Planned |
 | [Unit-free](projects/unit-free/poc.md) | The graph threshold where primitive circuit coefficients switch from bounded size to exponential growth. |  |  | Planned |
+| [Qubit memory bounds](projects/qubit-memory-bounds/poc.md) | The hidden memory bill for making irreversible dynamics reversible: exact qubit lower bounds tested against circuits that repeat one unchanged block. |  |  | Planned |
 | [Phase witness](projects/phase-witness/poc.md) | What can finite loop-phase measurements prove about continuum geometry, and which smooth explanations can they never rule out? |  |  | Planned |
+| [Time-arrow bench](projects/time-arrow-bench/poc.md) | A system can look reversible because observations or tests erased its arrow of time. Controlled challenges separate hidden dynamics, blind statistics and insufficient data. |  |  | Planned |
 | [Rational-product ambiguity](projects/rational-product-ambiguity/poc.md) | The fractal size of infinitely ambiguous representations in nonstationary rational-product systems. |  |  | Planned |
 | [Verlet grid certificates](projects/verlet-grid-cert/poc.md) | Certified energy-amplification bounds when tiny time-grid displacements resonate with an otherwise stable integrator. |  |  | Planned |
 | [Leak window](projects/leak-window/poc.md) | When a tiny reaction-cascade leak becomes a macroscopic signal, and which detection windows are mathematically impossible. |  |  | Planned |
 | [VeriQueue](projects/veriqueue/poc.md) | Software delivery scheduled around verification evidence that expires and reviewers whose replacement time is scarce. |  |  | Planned |
+| [Kubernetes admission compatibility](projects/k8s-admission-compat/poc.md) | Admission webhooks can each look correct and still conflict in combination. A pinned stack tests mutation order, final policy consequences and the value of theorem-based checks. |  |  | Planned |
 | [Evidence-aware release cohorts](projects/evidence-aware-release-cohort-optimization/poc.md) | Joint choices of release cohorts, dependency paths and reusable verification evidence, with the full delivery cost counted. |  |  | Planned |
+| [Shapley audit sensitivity](projects/shapley-audit-sensitivity/poc.md) | Auditing contribution bonuses when contributions can substitute for each other: how much negative interaction overturns a supposedly settled Shapley share? |  |  | Planned |
+| [SETI silence audit](projects/seti-silence-audit/poc.md) | What does a silent radio survey actually rule out about future physical arrivals? Separate survey exclusions from assumptions about invisible civilizations. |  |  | Planned |
+
+---
+
+Original research material © 2026 [Artem Legotin](https://github.com/arlegotin), [CC BY-SA 4.0](LICENSE). [Citation](CITATION.cff) · [Reuse and attribution](LICENSING.md).
+
+Image: *An elderly alchemist sitting next to his equipment*, Christoph Weigel, 1698. [Wellcome Collection](https://wellcomecollection.org/works/a4hpxd23/items), [Public Domain Mark](https://creativecommons.org/publicdomain/mark/1.0/).
